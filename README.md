@@ -1,3 +1,3 @@
 #Pressball
 
-Неофициальное приложение сайта pressball.by
+Неофициальное приложение сайта [pressball.by](pressball.by)
