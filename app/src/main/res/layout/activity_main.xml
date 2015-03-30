@@ -1,0 +1,48 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <include layout="@layout/toolbar"/>
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/main_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <com.astuetz.PagerSlidingTabStrip
+                    android:id="@+id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <android.support.v4.widget.SwipeRefreshLayout
+                        android:id="@+id/refresh_news"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/pager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            tools:context=".MainActivity"/>
+                    </android.support.v4.widget.SwipeRefreshLayout>
+                    <include layout="@layout/spinner"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <include layout="@layout/error_internet"/>
+        </FrameLayout>
+        <include layout="@layout/navigation"/>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000</color>
+    <color name="pressballColor">#fff17501</color>
+    <color name="lightPressballColor">#fffff8e0</color>
+    <color name="darkPressballColor">#ffc86307</color>
+    <color name="textColor">#FFFFFF</color>
+
+    <color name="updateColor2">#fff17501</color>
+    <color name="updateColor1">#ffffc396</color>
+    <color name="updateColor3">#ffc86307</color>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Прессболл</string>
+    <string name="action_settings">Настройки</string>
+
+    <string-array name="sports">
+        <item>Все</item>
+        <item>Футбол</item>
+        <item>Хоккей</item>
+        <item>Баскетбол</item>
+        <item>Гандбол</item>
+        <item>Зимние виды</item>
+        <item>Биатлон</item>
+        <item>Летние виды</item>
+        <item>Разное</item>
+        <item>Олимпиада</item>
+        <item>Теннис</item>
+    </string-array>
+    <string-array name="tabs">
+        <item>Топ-новости</item>
+        <item>Все новости</item>
+    </string-array>
+
+    <string name="title_activity_news">Прессболл</string>
+    <string name="update">Обновить</string>
+    <string name="error_internet">Произошла ошибка при загрузке данных.</string>
+    <string name="repeat">Повторить</string>
+    <string name="comments">Комментарии</string>
+
+</resources>

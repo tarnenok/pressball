@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.gc.materialdesign.views.ButtonFlat
+        android:id="@+id/online_update_button"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/pressballColor"
+        android:text="@string/update"
+        android:textSize="42dp"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_online"
+        android:layout_height="500dp"
+        android:layout_width="match_parent"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/view_online"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:clickable="true"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>
